@@ -33,6 +33,12 @@ namespace InheritanceIntro
 
         private void SayName_Button_Click(object sender, RoutedEventArgs e)
         {
+
+            List<Animal> animal = new List<Animal>();
+
+            animals.Add(frog);
+            animal.Add(Dog);
+            animals.Add
             // Define a new List of dogs
             List<Dog> dogs = new List<Dog>();
             
@@ -49,6 +55,15 @@ namespace InheritanceIntro
             {
                 d.SayName();
             }
+
+            Duck duck = new Duck(28, "Daffy");
+            duck.SayName();
+        }
+
+        private void Quack_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Duck duck = new Duck();
+            duck.Quack();
         }
     }
 }
